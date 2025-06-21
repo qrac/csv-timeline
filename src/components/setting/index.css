@@ -1,0 +1,23 @@
+.setting {
+  width: calc(100vw - 32px);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--theme-bg-1);
+  border-radius: 20px;
+  transition: opacity 0.2s ease-in-out, translate 0.2s ease-in-out,
+    display 0.2s allow-discrete;
+}
+
+.setting:not(.is-active) {
+  display: none;
+  translate: 0 32px;
+  opacity: 0;
+}
+
+@starting-style {
+  .setting {
+    opacity: 0;
+    translate: 0 32px;
+  }
+}

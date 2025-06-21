@@ -1,0 +1,32 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  height: 100svh;
+  padding: 16px 0 10svh;
+  overflow-y: auto;
+  transition: opacity 0.2s ease-in-out, display 0.2s allow-discrete;
+  z-index: 100;
+}
+
+.modal:not(.is-active) {
+  display: none;
+  opacity: 0;
+}
+
+@starting-style {
+  .modal {
+    opacity: 0;
+  }
+}
+
+.modal-background {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.36);
+}
+
+.modal-container {
+  position: relative;
+}

@@ -1,0 +1,23 @@
+.item {
+  display: grid;
+  gap: 4px;
+  padding: 0 0 0 5px;
+  border-left-width: 4px;
+  border-left-color: var(--theme-ac, var(--theme-bd-2));
+}
+
+.item-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1;
+  font-feature-settings: "palt";
+  white-space: nowrap;
+}
+
+.item-date {
+  font-size: 0.675rem;
+  font-weight: 600;
+  font-family: var(--font-sans-en);
+  line-height: 1;
+  white-space: nowrap;
+}

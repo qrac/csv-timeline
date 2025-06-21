@@ -1,0 +1,6 @@
+.main {
+  padding-bottom: 40svh;
+  background-color: var(--theme-bg-2);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}

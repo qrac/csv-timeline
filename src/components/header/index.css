@@ -1,0 +1,13 @@
+.header {
+  position: relative;
+  padding: 12px;
+  background-color: var(--theme-bg-1);
+  border-bottom-width: 2px;
+  z-index: 10;
+}
+
+.header-title {
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1;
+}

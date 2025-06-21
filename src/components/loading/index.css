@@ -1,0 +1,11 @@
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50%, -50%;
+  z-index: 9999;
+}
+
+.loading:not(.is-active) {
+  display: none;
+}

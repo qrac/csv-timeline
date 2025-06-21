@@ -1,0 +1,11 @@
+@import "musubii/src/bases/theme/light.css";
+@import "musubii/src/bases/typo/font.css";
+@import "musubii/src/bases/base/reset.css";
+@import "musubii/src/bases/base/html.css";
+@import "musubii/src/elements/button/main.css";
+
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100svh;
+}

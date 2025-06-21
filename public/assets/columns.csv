@@ -1,0 +1,6 @@
+任天堂,"hardware,nintendo|software,fc|software,sfc|software,n64|software,ngc|software,wii|software,wiiu|software,gb|software,gba|software,nds|software,3ds|software,switch|anime,nintendo|news,nintendo"
+ソニー,"hardware,sony|software,ps1|software,ps2|software,ps3|software,ps4|software,ps5|software,psp|software,psvita|news,sony"
+セガ,"hardware,sega|software,sega|news,sega"
+SNK,"hardware,snk|software,snk|news,snk"
+他社,"hardware,microsoft|hardware,nec|hardware,3do|hardware,bandai|software,capcom,arcade|software,capcom,multi|software,namco,arcade|software,taito,arcade|software,tecmo,arcade|software,arc,arcadee|software,pc"
+世間の出来事,"news,japan|news,world|service,japan|service,world|digital,japan|digital,world|music,japan|film,japan|film,world"

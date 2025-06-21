@@ -1,0 +1,128 @@
+.timeline {
+  transition: opacity 0.4s ease-in-out, translate 0.4s ease-in-out,
+    display 0.4s allow-discrete;
+}
+
+.timeline:not(.is-active) {
+  display: none;
+  translate: 0 32px;
+  opacity: 0;
+}
+
+@starting-style {
+  .timeline {
+    opacity: 0;
+    translate: 0 32px;
+  }
+}
+
+.timeline-container {
+  display: grid;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.timeline-column {
+  display: grid;
+  grid-template-rows: subgrid;
+  border-right-width: 1px;
+  border-left-width: 1px;
+}
+
+.timeline-row {
+  display: grid;
+  grid-template-rows: subgrid;
+}
+
+.timeline-column.is-year {
+  position: sticky;
+  left: 0;
+  background-color: var(--theme-tx-1);
+  border-color: transparent;
+  z-index: 6;
+}
+
+.timeline-head.is-year {
+  position: sticky;
+  top: 0;
+  background-color: var(--theme-tx-1);
+  border-bottom-width: 2px;
+  border-bottom-color: transparent;
+  z-index: 2;
+}
+
+.timeline-row.is-year {
+  padding: 0 12px 4px;
+  border-color: transparent;
+}
+
+.timeline-year {
+  position: sticky;
+  top: 40px;
+  align-self: start;
+  color: var(--theme-bg-1);
+  font-size: 1.125rem;
+  font-family: var(--font-sans-en);
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.timeline-column.is-content {
+  background-color: var(--theme-bg-1);
+}
+
+.timeline-head.is-content {
+  position: sticky;
+  top: 0;
+  padding: 12px 6px;
+  background-color: var(--theme-bg-1);
+  border-bottom-width: 2px;
+  z-index: 5;
+}
+
+.timeline-title {
+  line-height: 1;
+  font-feature-settings: "palt";
+  letter-spacing: 0.025em;
+  white-space: nowrap;
+}
+
+.timeline-title-main {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.timeline-title-sub {
+  color: var(--theme-static);
+  font-size: 0.675rem;
+  font-weight: 600;
+}
+
+.timeline-row:not(:last-child) {
+  border-bottom-width: 1px;
+}
+
+.timeline-row.is-content {
+  padding: 6px 24px 6px 6px;
+}
+
+.timeline-date > * {
+  margin-top: 6px;
+}
+
+.timeline-date:first-child > *:first-child {
+  margin-top: 0;
+}
+
+.timeline-container.is-generate {
+  border-width: 1px;
+}
+
+.timeline-container.is-generate .timeline-column.is-year,
+.timeline-container.is-generate .timeline-head.is-year,
+.timeline-container.is-generate .timeline-head.is-content {
+  position: static;
+}
